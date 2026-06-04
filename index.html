@@ -636,55 +636,28 @@
        SLIDE 7 — CONNECTION DIAGRAM
        ══════════════════════════════════════════════════ -->
   <div class="slide slide-light" id="s7">
-    <div class="slide-inner">
+    <div class="slide-inner" style="display:flex;flex-direction:column;height:100%;">
       <div class="eyebrow">The Web</div>
       <div class="headline">How It All Connects</div>
-      <hr class="rule" style="margin-bottom:1.5vh;" />
-      <div style="flex:1; display:flex; flex-direction:column; justify-content:space-evenly;">
+      <hr class="rule" style="margin-bottom:1.2vh;" />
 
-        <!-- Row 1 -->
-        <div style="display:flex;align-items:center;justify-content:center;gap:0;">
-          <div class="d-box gray" style="max-width:16vw;"><div class="d-title">Heinrich Himmler</div><div class="d-sub">Head of the Nazi SS</div></div>
-          <div class="d-arrow-h"></div>
-          <div class="d-box red" style="max-width:16vw;"><div class="d-title">Erich Traub</div><div class="d-sub">Nazi tick-weapons scientist</div></div>
-          <div class="d-arrow-h"></div>
-          <div class="d-box gray" style="max-width:16vw;"><div class="d-title">Insel Riems</div><div class="d-sub">Nazi bioweapons island lab</div></div>
-          <div class="d-arrow-h"></div>
-          <div class="d-box blue" style="max-width:16vw;"><div class="d-title">Operation Paperclip</div><div class="d-sub">US recruits Nazi scientists</div></div>
+      <!-- Main layout: big image left, flowchart right -->
+      <div style="flex:1;min-height:0;display:flex;gap:3vw;">
+
+        <!-- Big screenshot -->
+        <div style="flex:2;min-width:0;display:flex;align-items:center;justify-content:center;background:var(--offwhite);border-radius:2px;padding:8px;">
+          <img src="ss-129.png" style="max-width:100%;max-height:100%;object-fit:contain;border-radius:2px;" />
         </div>
 
-        <!-- Vertical connector -->
-        <div style="display:flex;justify-content:center;padding-right:0;">
-          <div style="margin-left:calc(50% - 8vw);">
-            <div class="d-arrow-v"></div>
-          </div>
-        </div>
-
-        <!-- Row 2 -->
-        <div style="display:flex;align-items:center;justify-content:center;gap:0;">
-          <div class="d-box blue" style="max-width:16vw;"><div class="d-title">Fort Detrick</div><div class="d-sub">US Army biowarfare HQ<br>Frederick, Maryland</div></div>
-          <div class="d-arrow-h"></div>
-          <div class="d-box red" style="max-width:16vw;"><div class="d-title">Plum Island</div><div class="d-sub">Secret US island lab<br>10 miles from Old Lyme, CT</div></div>
-          <div class="d-arrow-h"></div>
-          <div class="d-box gray" style="max-width:16vw;"><div class="d-title">Tick &amp; Insect Research</div><div class="d-sub">Vectors, pathogens,<br>insect-borne disease</div></div>
-          <div class="d-spacer"></div>
-          <div class="img-placeholder" style="max-width:16vw;min-height:8vh;flex:1;"><span>[ Tick photo ]</span></div>
-        </div>
-
-        <!-- Vertical connector -->
-        <div style="display:flex;justify-content:center;">
-          <div style="margin-right:calc(50% - 8vw);">
-            <div class="d-arrow-v" style="background:var(--red);">
-              <div style="position:absolute;bottom:-1px;left:-4px;border:5px solid transparent;border-top-color:var(--red);"></div>
-            </div>
-          </div>
-        </div>
-
-        <!-- Row 3 -->
-        <div style="display:flex;align-items:center;justify-content:center;gap:2vw;">
-          <div class="d-box red" style="max-width:22vw;"><div class="d-title">Lyme Disease</div><div class="d-sub">First US: Old Lyme CT, 1975 (10 miles from Plum Island)</div></div>
-          <div class="d-box red" style="max-width:22vw;"><div class="d-title">West Nile Virus</div><div class="d-sub">First US: NYC area, Aug 1999 (18 horses dying on North Fork weeks prior)</div></div>
-          <div class="d-box red" style="max-width:22vw;"><div class="d-title">Duck Enteritis</div><div class="d-sub">First US: Suffolk County, Long Island, Jan 1967</div></div>
+        <!-- Flowchart: Himmler > Traub > Riems > Paperclip -->
+        <div style="flex:1;min-width:0;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:0;">
+          <div class="d-box gray" style="width:100%;max-width:none;"><div class="d-title">Heinrich Himmler</div><div class="d-sub">Head of the Nazi SS</div></div>
+          <div class="d-arrow-v" style="height:3.5vh;"></div>
+          <div class="d-box red" style="width:100%;max-width:none;"><div class="d-title">Erich Traub</div><div class="d-sub">Nazi tick-weapons scientist</div></div>
+          <div class="d-arrow-v" style="height:3.5vh;"></div>
+          <div class="d-box gray" style="width:100%;max-width:none;"><div class="d-title">Insel Riems</div><div class="d-sub">Nazi bioweapons island lab</div></div>
+          <div class="d-arrow-v" style="height:3.5vh;"></div>
+          <div class="d-box blue" style="width:100%;max-width:none;"><div class="d-title">Operation Paperclip</div><div class="d-sub">US recruits Nazi scientists</div></div>
         </div>
 
       </div>
